@@ -1,10 +1,10 @@
 package com.jinxiu.mall.mallportal.service.impl;
 
-import com.macro.mall.model.UmsMember;
-import com.macro.mall.portal.domain.MemberProductCollection;
-import com.macro.mall.portal.repository.MemberProductCollectionRepository;
-import com.macro.mall.portal.service.MemberCollectionService;
-import com.macro.mall.portal.service.UmsMemberService;
+import com.jinxiu.mall.mallmbg.model.UmsMember;
+import com.jinxiu.mall.mallportal.domain.MemberProductCollection;
+import com.jinxiu.mall.mallportal.repository.MemberProductCollectionRepository;
+import com.jinxiu.mall.mallportal.service.MemberCollectionService;
+import com.jinxiu.mall.mallportal.service.UmsMemberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -13,7 +13,6 @@ import org.springframework.stereotype.Service;
 
 /**
  * 会员收藏Service实现类
- * Created by macro on 2018/8/2.
  */
 @Service
 public class MemberCollectionServiceImpl implements MemberCollectionService {

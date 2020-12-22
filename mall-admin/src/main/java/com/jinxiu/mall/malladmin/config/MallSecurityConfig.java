@@ -4,6 +4,7 @@ import com.jinxiu.mall.malladmin.service.UmsAdminService;
 import com.jinxiu.mall.malladmin.service.UmsResourceService;
 import com.jinxiu.mall.mallmbg.model.UmsResource;
 import com.jinxiu.mall.mallsecurity.component.DynamicSecurityService;
+import com.jinxiu.mall.mallsecurity.config.SecurityConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

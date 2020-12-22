@@ -22,7 +22,7 @@ import java.lang.reflect.Method;
 public class RedisCacheAspect {
     private static Logger LOGGER = LoggerFactory.getLogger(RedisCacheAspect.class);
 
-    @Pointcut("execution(public * com.jinxiu.mall.mallsecurity.portal.service.*CacheService.*(..)) || execution(public * com.macro.mall.service.*CacheService.*(..))")
+    @Pointcut("execution(public * *CacheService.*(..)) || execution(public * com.jinxiu.mall.mallsecurity.service.*CacheService.*(..))")
     public void cacheAspect() {
     }
 

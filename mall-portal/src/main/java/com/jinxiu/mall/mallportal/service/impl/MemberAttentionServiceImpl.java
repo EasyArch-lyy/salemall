@@ -1,10 +1,10 @@
 package com.jinxiu.mall.mallportal.service.impl;
 
-import com.macro.mall.model.UmsMember;
-import com.macro.mall.portal.domain.MemberBrandAttention;
-import com.macro.mall.portal.repository.MemberBrandAttentionRepository;
-import com.macro.mall.portal.service.MemberAttentionService;
-import com.macro.mall.portal.service.UmsMemberService;
+import com.jinxiu.mall.mallmbg.model.UmsMember;
+import com.jinxiu.mall.mallportal.domain.MemberBrandAttention;
+import com.jinxiu.mall.mallportal.repository.MemberBrandAttentionRepository;
+import com.jinxiu.mall.mallportal.service.MemberAttentionService;
+import com.jinxiu.mall.mallportal.service.UmsMemberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -15,7 +15,6 @@ import java.util.Date;
 
 /**
  * 会员关注Service实现类
- * Created by macro on 2018/8/2.
  */
 @Service
 public class MemberAttentionServiceImpl implements MemberAttentionService {
