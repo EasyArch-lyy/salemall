@@ -7,7 +7,7 @@ spring:
   datasource:
     url: jdbc:mysql://39.100.149.36:3306/mall?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
     username: root
-    password: 123456a
+    password: 409421lz
   thymeleaf:
     mode: HTML5
     encoding: utf-8
@@ -22,7 +22,7 @@ mybatis:
 logging:
   level:
     root: info
-    com.macro.mall: debug
+    com.jinxiu.mall: debug
 
 host:
   mall:

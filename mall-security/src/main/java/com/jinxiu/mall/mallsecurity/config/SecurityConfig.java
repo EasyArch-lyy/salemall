@@ -1,7 +1,13 @@
 package com.jinxiu.mall.mallsecurity.config;
 
-import com.macro.mall.security.component.*;
-import com.macro.mall.security.util.JwtTokenUtil;
+import com.jinxiu.mall.mallsecurity.component.DynamicAccessDecisionManager;
+import com.jinxiu.mall.mallsecurity.component.DynamicSecurityFilter;
+import com.jinxiu.mall.mallsecurity.component.DynamicSecurityMetadataSource;
+import com.jinxiu.mall.mallsecurity.component.DynamicSecurityService;
+import com.jinxiu.mall.mallsecurity.component.JwtAuthenticationTokenFilter;
+import com.jinxiu.mall.mallsecurity.component.RestAuthenticationEntryPoint;
+import com.jinxiu.mall.mallsecurity.component.RestfulAccessDeniedHandler;
+import com.jinxiu.mall.mallsecurity.util.JwtTokenUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.context.annotation.Bean;
@@ -20,7 +26,6 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 
 /**
  * 对SpringSecurity的配置的扩展，支持自定义白名单资源路径和查询用户逻辑
- * Created by macro on 2019/11/5.
  */
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 

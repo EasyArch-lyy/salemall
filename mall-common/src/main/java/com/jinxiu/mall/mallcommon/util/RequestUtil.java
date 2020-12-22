@@ -24,13 +24,14 @@ public class RequestUtil {
         if (ipAddress == null || ipAddress.length() == 0 || "unknown".equalsIgnoreCase(ipAddress)) {
             ipAddress = request.getRemoteAddr();
             // 从本地访问时根据网卡取本机配置的IP
-            if (ipAddress.equals("127.0.0.1") || ipAddress.equals("0:0:0:0:0:0:0:1")) {
+            if (ipAddress.equals("39.100.149.36") || ipAddress.equals("0:0:0:0:0:0:0:1")) {
                 InetAddress inetAddress = null;
                 try {
                     inetAddress = InetAddress.getLocalHost();
                 } catch (UnknownHostException e) {
                     e.printStackTrace();
                 }
+                assert inetAddress != null;
                 ipAddress = inetAddress.getHostAddress();
             }
         }
