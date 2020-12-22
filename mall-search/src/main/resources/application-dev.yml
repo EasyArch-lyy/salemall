@@ -18,12 +18,12 @@ spring:
         enabled: true
   elasticsearch:
     rest:
-      uris: 39.100.149.36:9200
+      uris: 39.100.149.36:9201
 
 logging:
   level:
     root: info
-    com.macro.mall: debug
+    com.jinxiu.mall: debug
 
 logstash:
   host: localhost

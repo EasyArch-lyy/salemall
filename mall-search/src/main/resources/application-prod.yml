@@ -18,14 +18,14 @@ spring:
         enabled: true
   elasticsearch:
     rest:
-      uris: es:9200
+      uris: es:9201
 
 logging:
   file:
     path: /var/logs
   level:
     root: info
-    com.macro.mall: info
+    com.jinxiu.mall: info
 
 logstash:
   host: logstash
