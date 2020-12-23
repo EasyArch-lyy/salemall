@@ -15,11 +15,11 @@ public class SwaggerConfig extends BaseSwaggerConfig {
     @Override
     public SwaggerProperties swaggerProperties() {
         return SwaggerProperties.builder()
-                .apiBasePackage("com.macro.mall.portal.controller")
+                .apiBasePackage("com.jinxiu.mall.mallportal.controller")
                 .title("mall前台系统")
                 .description("mall前台相关接口文档")
                 .contactName("jinxiu")
-                .version("1.0")
+                .version("0.0.1")
                 .enableSecurity(true)
                 .build();
     }

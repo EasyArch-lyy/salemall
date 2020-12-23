@@ -3,8 +3,9 @@
 <mapper namespace="com.jinxiu.mall.malladmin.dao.PmsProductCategoryDao">
     <resultMap id="listWithChildrenMap" type="com.jinxiu.mall.malladmin.dto.PmsProductCategoryWithChildrenItem"
                extends="com.jinxiu.mall.mallmbg.mapper.PmsProductCategoryMapper.BaseResultMap">
-        <collection property="children" resultMap="com.jinxiu.mall.mallmbg.mapper.PmsProductCategoryMapper.BaseResultMap"
-                    columnPrefix="child_"></collection>
+        <collection property="children"
+                    resultMap="com.jinxiu.mall.mallmbg.mapper.PmsProductCategoryMapper.BaseResultMap"
+                    columnPrefix="child_"/>
     </resultMap>
     <select id="listWithChildren" resultMap="listWithChildrenMap">
         select

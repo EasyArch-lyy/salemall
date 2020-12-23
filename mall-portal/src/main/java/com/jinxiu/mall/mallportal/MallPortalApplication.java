@@ -3,7 +3,7 @@ package com.jinxiu.mall.mallportal;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages="com.jinxiu.mall.mallcommon")
 public class MallPortalApplication {
 
     public static void main(String[] args) {

@@ -71,7 +71,7 @@ public class HomeServiceImpl implements HomeService {
 
     @Override
     public List<PmsProduct> recommendProductList(Integer pageSize, Integer pageNum) {
-        // TODO:暂时默认推荐所有商品
+        // 默认推荐所有商品
         PageHelper.startPage(pageNum,pageSize);
         PmsProductExample example = new PmsProductExample();
         example.createCriteria()

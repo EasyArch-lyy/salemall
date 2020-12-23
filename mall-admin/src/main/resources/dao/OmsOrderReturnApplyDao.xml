@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.jinxiu.mall.malladmin.dao.OmsOrderReturnApplyDao">
-    <resultMap id="returnApplyDetailResultMap" type="com.jinxiu.mall.mallmbg.dto.OmsOrderReturnApplyResult" extends="com.jinxiu.mall.mallmbg.mapper.OmsOrderReturnApplyMapper.BaseResultMap">
+    <resultMap id="returnApplyDetailResultMap" type="com.jinxiu.mall.malladmin.dto.OmsOrderReturnApplyResult" extends="com.jinxiu.mall.mallmbg.mapper.OmsOrderReturnApplyMapper.BaseResultMap">
         <association property="companyAddress" resultMap="com.jinxiu.mall.mallmbg.mapper.OmsCompanyAddressMapper.BaseResultMap" columnPrefix="ca_"/>
     </resultMap>
     <select id="getList" resultMap="com.jinxiu.mall.mallmbg.mapper.OmsOrderReturnApplyMapper.BaseResultMap">

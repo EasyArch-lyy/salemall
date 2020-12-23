@@ -8,7 +8,7 @@
         <collection property="skuStockList" columnPrefix="sku_" resultMap="com.jinxiu.mall.mallmbg.mapper.PmsSkuStockMapper.BaseResultMap">
         </collection>
     </resultMap>
-    <resultMap id="promotionProductMap" type="com.macro.mall.portal.domain.PromotionProduct" extends="com.jinxiu.mall.mallmbg.mapper.PmsProductMapper.BaseResultMap">
+    <resultMap id="promotionProductMap" type="com.jinxiu.mall.mallportal.domain.PromotionProduct" extends="com.jinxiu.mall.mallmbg.mapper.PmsProductMapper.BaseResultMap">
         <id column="id" jdbcType="BIGINT" property="id" />
         <collection property="skuStockList" columnPrefix="sku_" resultMap="com.jinxiu.mall.mallmbg.mapper.PmsSkuStockMapper.BaseResultMap">
         </collection>
